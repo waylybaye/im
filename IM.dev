@@ -1,0 +1,119 @@
+[Project]
+FileName=IM.dev
+Name=IM
+Ver=1
+IsCpp=1
+Type=0
+Compiler=-D__GNUWIN32__ -W -fexceptions -DWIN32 -D_DEBUG -D_WINDOWS -D_MBCS_@@_
+CppCompiler=-D__GNUWIN32__ -W -fexceptions -DWIN32 -D_DEBUG -D_WINDOWS -D_MBCS_@@_
+Includes=
+Linker=-lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32_@@_C:/Dev-Cpp/lib/libws2_32.a_@@_C:/Dev-Cpp/lib/libwsock32.a_@@_C:/Dev-Cpp/lib/libwinmm.a_@@_
+Libs=
+UnitCount=7
+Folders="Header Files","Resource Files","Source Files"
+ObjFiles=
+PrivateResource=
+ResourceIncludes=
+MakeIncludes=
+Icon=
+ExeOutput=
+ObjectOutput=
+OverrideOutput=0
+OverrideOutputName=IM.exe
+HostApplication=
+CommandLine=
+UseCustomMakefile=0
+CustomMakefile=
+IncludeVersionInfo=0
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=0000000000000000000000
+
+[Unit1]
+FileName=global.cpp
+Folder="Source Files"
+Compile=1
+CompileCpp=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=main.cpp
+Folder="Source Files"
+Compile=1
+CompileCpp=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=sock.cpp
+Folder="Source Files"
+Compile=1
+CompileCpp=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=wave.cpp
+Folder="Source Files"
+Compile=1
+CompileCpp=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=id.h
+Folder="Header Files"
+Compile=1
+CompileCpp=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=sock.h
+Folder="Header Files"
+Compile=1
+CompileCpp=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit7]
+FileName=wave.h
+Folder="Header Files"
+Compile=1
+CompileCpp=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[VersionInfo]
+Major=0
+Minor=1
+Release=1
+Build=1
+LanguageID=1033
+CharsetID=1252
+CompanyName=
+FileVersion=0.1
+FileDescription=Developed using the Dev-C++ IDE
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=IM.exe
+ProductName=IM
+ProductVersion=0.1
+AutoIncBuildNr=0
+

@@ -1,0 +1,39 @@
+# Project: IM
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = global.o main.o sock.o wave.o $(RES)
+LINKOBJ  = global.o main.o sock.o wave.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -mwindows -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 C:/Dev-Cpp/lib/libws2_32.a C:/Dev-Cpp/lib/libwsock32.a C:/Dev-Cpp/lib/libwinmm.a  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = IM.exe
+CXXFLAGS = $(CXXINCS) -D__GNUWIN32__ -W -fexceptions -DWIN32 -D_DEBUG -D_WINDOWS -D_MBCS  
+CFLAGS = $(INCS) -D__GNUWIN32__ -W -fexceptions -DWIN32 -D_DEBUG -D_WINDOWS -D_MBCS  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before IM.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "IM.exe" $(LIBS)
+
+global.o: global.cpp
+	$(CPP) -c global.cpp -o global.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+sock.o: sock.cpp
+	$(CPP) -c sock.cpp -o sock.o $(CXXFLAGS)
+
+wave.o: wave.cpp
+	$(CPP) -c wave.cpp -o wave.o $(CXXFLAGS)

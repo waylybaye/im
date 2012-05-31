@@ -1,0 +1,4 @@
+Debug
+*.exe
+*.o
+.DS_Store
